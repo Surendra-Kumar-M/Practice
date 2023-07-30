@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class App{
-  public static char[] removeTheElement(char[] arr, int index)
+  public static void main(String[] args)
     {
-  
-        }
+  System.out.println("Hello There !");
+        }}
