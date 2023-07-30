@@ -1,22 +1,22 @@
+package com.example.SK;
+
 import java.util.Scanner;
-class Palindrome
-{
-public static void main(String args[]){
-Scanner s=new Scanner(System.in);
-System.out.println("Enter a Number");
-int n=s.nextInt();
-int r,sum=0,temp;
-temp=n;
-while(n>0){
-r=n%10;
-sum=(sum*10)+r;
-n=n/10;
-}
-if(temp==sum){
-System.out.println("It is Palindrone");
-}
-else{
-System.out.println("It is not a Palindrone");
-}
-}                                                  
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		String a,b="";
+		Scanner s= new Scanner(System.in);
+		System.out.print("Enter a String : ");
+		a=s.nextLine();
+		for(int i=a.length()-1;i>=0;i--) {
+			b+=a.charAt(i);
+		}
+		if(a.equalsIgnoreCase(b))
+			System.out.print("The Given String is Palindrome");
+		else
+			System.out.print("The Given String is not a Palindrome");
+		
+	}
+
 }
